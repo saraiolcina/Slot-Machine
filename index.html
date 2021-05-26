@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAC DESARROLLO ENTORNO CLIENTE</title>
+    <script type="text/javascript" src="scripts.js"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="content">
+      <div id="buttoncontainer">
+        <!--Botón que pide al usuario monedas-->
+        <button id="insertcoin" onclick="readCoins()">INSERTAR MONEDAS</button>
+        <!--Botón que inicia y presenta las 3 imagenes iniciales-->
+        <button id="start" onclick="startImage()">TIRAR</button>
+        <!--Botón que muestra las monedas que quedan-->
+        <button id="exit" onclick="showList()">SALIR</button>
+        <!--Botón de instrucciones-->
+        <button id="explain" onclick="explain()">INSTRUCCIONES</button>
+        <p id="textButton" hidden>
+          <br />
+          &nbsp;INSTRUCCIONES DEL JUEGO:
+          <br />
+          <button id="exittext" onclick="exitExplain()">Salir</button>
+          <br />
+          &nbsp;En cada tirada se gasta una moneda
+          <br />
+          <br />
+          &nbsp;Una zanahoria gana una moneda <br />
+          &nbsp;Dos zanahorias gana cuatro monedas <br />
+          &nbsp;Tres zanahorias gana diez monedas <br />
+          &nbsp;Dos hortalizas gana dos monedas <br />
+          &nbsp;Tres hortalizas gana cinco monedas <br />
+          &nbsp;Dos hortalizas y una zanahoria gana tres monedas
+          <br />
+          <br />
+        </p>
+      </div>
+
+      <!--Contenedor con las imágenes-->
+      <div id="imagescontainer"></div>
+
+      <!--Contenedor con la lista de resultados-->
+      <div id="textcounter">
+        <ul id="resultslist"></ul>
+        <!--Contenedor que recoge las monedas totales que tiene el usuario en cada momento-->
+        <div id="totalcoins"></div>
+      </div>
+    </div>
+  </body>
+</html>

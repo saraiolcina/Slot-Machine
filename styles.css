@@ -1,0 +1,113 @@
+@import "https://fonts.googleapis.com/css?family=Rubik+One";
+
+body {
+  background-image: url("img/fondo1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#start,
+#exit {
+  padding: 8px 20px;
+  position: absolute;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  font-family: "Rubik One", sans-serif;
+  font-size: 2vw;
+  background-color: rgb(247, 237, 199);
+}
+
+#start {
+  left: 65%;
+}
+
+#exit {
+  left: 85%;
+}
+
+#explain {
+  padding: 6px 17px;
+  position: absolute;
+  top: 23%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  font-family: "Rubik One", sans-serif;
+  font-size: 1.6vw;
+  background-color: rgb(247, 237, 199);
+}
+
+#insertcoin {
+  text-align: center;
+  padding: 10px 23px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Rubik One", sans-serif;
+  font-size: 2.3vw;
+  background-color: rgb(245, 242, 229);
+}
+
+#textButton {
+  position: absolute;
+  top: 30%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+  font-family: "Rubik One", sans-serif;
+  font-size: 1.4vw;
+  background-color: rgb(248, 248, 246);
+  width: 40%;
+}
+
+#exittext {
+  position: absolute;
+  top: 15%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  font-family: "Rubik One", sans-serif;
+  font-size: 0.9vw;
+  background-color: rgb(247, 237, 199);
+  width: 17%;
+}
+
+#textButton,
+p {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 50%;
+  z-index: 9;
+}
+
+#imagescontainer {
+  text-align: center;
+  padding: 10px 23px;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  padding: 8px 20px;
+  display: none;
+}
+
+ul {
+  line-height: 180%;
+}
+
+#resultslist {
+  font-family: "Rubik One", sans-serif;
+  font-size: 1.5vw;
+  color: antiquewhite;
+  list-style-type: none;
+  position: absolute;
+  left: 10%;
+  top: 8%;
+}
+
+#totalcoins {
+  font-family: "Rubik One", sans-serif;
+  font-size: 2vw;
+  position: absolute;
+  left: 33%;
+  top: 5%;
+  color: antiquewhite;
+}
